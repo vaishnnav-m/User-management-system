@@ -1,0 +1,36 @@
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "vaishnnav58@gmail.com",
+  "password": "12345678"
+}
+
+###
+
+GET http://localhost:3000/api/users/home
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjdmYTFmYjNiMDI5ZWQ4ZjcxNTYwOCIsImlhdCI6MTcyNzYwOTk0OSwiZXhwIjoxNzI3NjEzNTQ5fQ.eJxoj3FgxkVfvzI07jID922we8YeMa50ddQTp0Gp2eI
+
+###
+POST http://localhost:3000/api/admin/login
+
+Content-Type: application/json
+
+{
+  "email": "vaishnnav58@gmail.com",
+  "password": "12345678"
+}
+
+
+###
+POST http://localhost:3000/api/admin/editUser
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZmMwNWY1NmNjYWY1MTY4M2NmMTM3NyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcyNzkzODIxOSwiZXhwIjoxNzI3OTQxODE5fQ.fJwG0si0AVOKEqRd6ETIrM8Dnguj0pBJpj4319B7xf4"
+
+Content-Type: application/json
+
+{
+  "name":"hello"
+  "email": "vaishnnav58@gmail.com",
+  "password": "12345678"
+}
+
